@@ -1,0 +1,135 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #222;
+}
+a,
+a::after,
+a::before {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hotpink;
+    padding: 10px;
+    border-bottom: 3px solid pink;
+}
+
+header img {
+    width: 50px;
+}
+
+div.gallery {
+    border: 3px solid white;
+}
+o
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+}
+
+
+.responsive {
+    padding: 0 10px;
+    float: left;
+    width: 24.99999%;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.site-footer {
+    background-color: hotpink;
+    color: white;
+    padding: 20px 0;
+    border-top: 3px solid pink;
+    margin-top: 15%; /* Adjusted to push the footer to the bottom */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        min-width: 100%;
+        text-align: center;
+    }
+}
